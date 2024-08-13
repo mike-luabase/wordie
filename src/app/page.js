@@ -588,7 +588,7 @@ const WordDiceGame = () => {
               <Die key={index} letter={letter} isCurrentPlayer={playerNumber === 2} />
             ))}
           </div>
-          <div className="flex justify-center border border-slate-700 mx-24">
+          <div className="flex justify-center border border-slate-700 md:mx-24">
             <div>
               <input
                 type="text"
