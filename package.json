@@ -1,5 +1,5 @@
 {
-  "name": "my-next-app",
+  "name": "wordie",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,9 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.45.1",
+    "next": "14.2.5",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.5"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "postcss": "^8",
