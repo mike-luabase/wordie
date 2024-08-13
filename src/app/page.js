@@ -553,7 +553,7 @@ const WordDiceGame = () => {
               <Die key={index} letter={letter} isCurrentPlayer={playerNumber === 1} />
             ))}
           </div>
-          <div className="flex justify-center border border-slate-700 mx-24">
+          <div className="flex justify-center border border-slate-700 md:mx-24">
             <div>
               <input
                 type="text"
@@ -562,7 +562,7 @@ const WordDiceGame = () => {
                 onChange={(e) => handleInputChange(1, e.target.value)}
                 onKeyDown={(e) => handleKeyDown(e, 1)}
                 placeholder={playerNumber === 1 ? 'Enter word' : ''}
-                className={`w-full mr-2 pl-16 py-1 border-none outline-none bg-transparent text-3xl font-bold text-slate-100 px-3 py-3 uppercase text-center w-[300px] ${
+                className={`w-full  md:w-[300px] mr-2 pl-16 py-1 border-none outline-none bg-transparent text-3xl font-bold text-slate-100 px-3 py-3 uppercase text-center ${
                   player1InputValid ? '' : 'text-red-500'
                 }`}
                 disabled={playerNumber !== 1 || !gameState.isGameActive || gameState.player1Status === 'submitted'}
